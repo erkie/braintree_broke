@@ -1,24 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build and run:
 
-Things you may want to cover:
+```bash
+$ docker build -t braintree_broke .
+$ docker run -p 3333:80 braintree_broke
+```
 
-* Ruby version
+Trigger error:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```bash
+$ curl localhost:3333
+```
